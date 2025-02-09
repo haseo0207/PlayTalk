@@ -1,0 +1,18 @@
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.icon-font {
+  font-family: 'YourFontFamily', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #5E35B1;
+}
+
+ul {
+  list-style: none; /* 기본 동그라미 제거 */
+}
