@@ -6,7 +6,11 @@
     transform: translateX(-50%); 
     width: 95%; 
     padding: 10px 20px; 
+
     background-color: white;
+
+    /* background-color: white; */
+
     height: 40px; /* 높이 설정 */
     display: flex;
     justify-content: space-between; /* 왼쪽과 오른쪽 항목을 양쪽 끝으로 배치 */
