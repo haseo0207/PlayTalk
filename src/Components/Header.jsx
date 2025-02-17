@@ -9,7 +9,7 @@ const Header = () => {
             <div className='top'>
                 <div className="logo">
                     <img src={logo} alt="메인아이콘" />
-                    <div className="icon-font">PlayTalk</div>
+                    <div className="icon-font">WriteMe</div>
                 </div>
 
                 <div className="right-items">

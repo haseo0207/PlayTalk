@@ -1,0 +1,7 @@
+.noticelist {
+    list-style-type: none;
+    border: none;
+    padding: 0;
+    padding-top: 70px;
+    background-color: white;
+}
