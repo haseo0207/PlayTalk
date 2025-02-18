@@ -7,6 +7,7 @@ const Notice = ({ noticelist }) => {
             <ul className='noticelist'>
                 {noticelist.map(expense => {
                     return (<Notice_List
+                        key = {expense.id}
                         noticelist = {expense}
                     />)
                 })}

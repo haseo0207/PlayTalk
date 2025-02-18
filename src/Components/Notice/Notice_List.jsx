@@ -1,13 +1,14 @@
 import React from 'react'
 import "./Notice_List.css"
+import {handleContentsClick} from "../../Utils/ContentsClick";
 import { CgProfile } from "react-icons/cg";
 import { FaRegEye } from "react-icons/fa6";
 const Notice_List = ({ noticelist }) => {
     return (
-        <li className="notice-item">
+        <li className="notice-item" onClick={() => handleContentsClick(noticelist)}>
             <div className="info-l">
                 <span className="listname">
-                    {noticelist.name}
+                    {noticelist.title}
                 </span>
                 <span className="listtime">
                     {noticelist.time}

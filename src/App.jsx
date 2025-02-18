@@ -8,11 +8,11 @@ const App = () => {
   const [info, setInfo] = useState({id : null, pw : null, nickname : null, ph : null, email : null});
 
   const [noticelist, setNoticeList] = useState([
-    { id: 1, name: "제목1", write: "관리자", view:1 ,time:"11:00"},
-    { id: 2, name: "제목2", write: "관리자", view:1 ,time:"12:00"},
-    { id: 3, name: "제목3", write: "관리자", view:1 ,time:"13:00"},
-    { id: 4, name: "제목4", write: "관리자", view:1 ,time:"14:00"},
-    { id: 5, name: "제목5", write: "관리자", view:1 ,time:"15:00"},
+    { id: 1, title: "제목1", name: "관리자", view:1 ,time:"11:00",contents:"test1",usrid:"11"},
+    { id: 2, title: "제목2", name: "관리자", view:1 ,time:"12:00",contents:"test2",usrid:"22"},
+    { id: 3, title: "제목3", name: "관리자", view:1 ,time:"13:00",contents:"test3",usrid:"33"},
+    { id: 4, title: "제목4", name: "관리자", view:1 ,time:"14:00",contents:"test4",usrid:"44"},
+    { id: 5, title: "제목5", name: "관리자", view:1 ,time:"15:00",contents:"test5",usrid:"55"},
   ]);
 
   const handleChange = (e) => {
@@ -50,6 +50,8 @@ const App = () => {
     });
     
   }
+
+  
   return (
     <>
     <Header /> 
