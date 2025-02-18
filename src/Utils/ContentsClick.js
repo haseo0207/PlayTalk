@@ -6,29 +6,23 @@ export const handleContentsClick = (data) => {
 const sendInfo = (data) =>{
     console.log(data);
     fetch("http://localhost:8080/posts", {
-      method: "POST",
+      method: "GET",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        content_id: data.id,    
-        name: data.name,    
-        title : data.title, 
-        // contents: data.contents,    
-        writedate : data.time, 
-        view : data.view,
-        user_id: data.usrid,
-      })
-    })
-    .then(response => {
+      }).then(response => {
       if (!response.ok) {
         // 상태코드가 2xx가 아니라면 에러 처리
-        throw new Error("정보전송 실패패! 서버 응답 코드: " + response.status);
+        throw new Error("정보조회 실패! 서버 응답 코드: " + response.status);
       }
-      // 200 OK 
-      alert("정보전송송 성공!");
+      // JSON 형태로 파싱
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      alert("게시글 조회 성공!");
+      // 여기서 받은 데이터를 화면에 표시하거나 추가 로직을 실행합니다.
     })
     .catch(error => {
       console.error(error);
-      alert("게시글 정보 전송 실패");
+      alert("게시글 조회 실패");
     });
-    
-  }
+}

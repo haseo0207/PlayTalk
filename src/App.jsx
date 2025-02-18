@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Login from './Components/Login/Login';
 import Join_Member from './Components/Join_Member/Join_Member';
 import Notice from './Components/Notice/Notice';
+import Notice_View from './Components/Notice/Notice_View';
 const App = () => {
   const [info, setInfo] = useState({id : null, pw : null, nickname : null, ph : null, email : null});
 
@@ -64,6 +65,7 @@ const App = () => {
     <Notice
       noticelist = {noticelist}
       />
+      <Notice_View/>
     </main>
     </>  
   )

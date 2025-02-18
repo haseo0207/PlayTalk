@@ -18,7 +18,7 @@ const Notice_List = ({ noticelist }) => {
             <div className="info-r">
                 <span className='listwirte'>
                     <CgProfile className = "profileicon"/>
-                    {noticelist.write}
+                    {noticelist.name}
                 </span>
                 <span className='listview'>
                     <FaRegEye className = "viewicon"/>
